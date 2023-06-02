@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colorgame</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js">
+      document.getElementById("colorDiv" + teller).style.backgroundColor = aColor[teller];
+    </script>
+  </head>
+  <body>
+    <div class="settings">
+      <h3>Settings</h3>
+      <table>
+        <tr>
+          <form>
+          <td>
+            aantal kleuren:
+          </td>
+          <td>
+            <input name="kleurInput" type="range" min="2" max="20" step="1" oninput="this.form.kleurOutput.value=this.value">
+            <output name="kleurOutput" oninput="this.form.kleurInput.value=this.value"></output>
+          </td>
+          </form>
+        </tr>
+        <tr>
+          <form>
+          <td>
+            aantal loops:
+          </td>
+          <td>
+            <input name="loopInput" type="range" min="1" max="100" step="1" oninput="this.form.loopOutput.value=this.value">
+            <output name="loopOutput" oninput="this.form.loopInput.value=this.value"></output>
+          </td>
+          </form>
+        </tr>
+        <tr>
+          <form>
+          <td>
+            Aantal sec/loop:
+          </td>
+          <td>
+            <input name="secInput" id="interval-range" type="range" min="500" max="5000" step="500" oninput="this.form.secOutput.value=this.value" onchange="updateInterval()">
+            <output name="secOutput" oninput="this.form.secInput.value=this.value"></output>(ms)
+          </td>
+          </form>
+        </tr>
+      </table>
+    </form>
+    </div>
+    <div class="colorGame">
+      <div class="colorDiv">
+        <div class="kleur" id="kleur1" onclick="colorCompare()"></div>
+        <div class="kleur" id="kleur2" onclick="colorCompare()"></div>
+        <div class="kleur" id="kleur3" onclick="colorCompare()"></div>
+        <div class="kleur" id="kleur4" onclick="colorCompare()"></div>
+        <div class="kleur" id="kleur5" onclick="colorCompare()"></div>
+        <div class="kleur" id="kleur6" onclick="colorCompare()"></div>
+        <div class="kleur" id="kleur7" onclick="colorCompare()"></div>
+        <div class="kleur" id="kleur8" onclick="colorCompare()"></div>
+        <div class="kleur" id="kleur9" onclick="colorCompare()"></div>
+        <div class="baseColor" id="basiskleur"></div>
+      </div>
+      <div class="button-container">
+        <button class="startStop" id="start" onclick="startToggle()">
+          Start
+        </button>
+        <button class="startStop" id="stop" onclick="stopToggle()">Stop</button>
+      </div>
+    </div>
+    <div class="scoreDiv" id="scoreDiv">Score:</div>
+  </body>
+</html>

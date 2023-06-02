@@ -1,0 +1,54 @@
+* {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.colorDiv {
+  display: flex;
+  flex-wrap: wrap;
+  width: 156px;
+  background-color: white;
+  margin: auto;
+}
+
+.colorGame, .scoreDiv, .settings {
+  display: inline-block;
+  vertical-align: top;
+  height: 100%;
+  border: 4mm ridge rgba(0, 0, 150, 1); 
+}
+
+.scoreDiv {
+  border: 4mm ridge rgba(0, 0, 150, 1); 
+  margin-right: 20px;
+}
+
+.startStop {
+  background-color: blue;
+  color: white;
+  width: 76px;
+  margin: 1px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 20px;
+}
+
+#basiskleur {
+  width: 154px;
+  height: 50px;
+  margin: 1px;
+  background-color: grey;
+}
+
+.kleur {
+  width: 50px;
+  height: 50px;
+  margin: 1px;
+  text-align: center;
+  font-size: 30px;
+  color: black;
+  background-color: grey;
+}

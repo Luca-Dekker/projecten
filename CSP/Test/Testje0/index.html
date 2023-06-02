@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Color Matching Test</title>
+  </head>
+  <body>
+    <h1>Color Matching Test</h1>
+    <p>Do the colors in these boxes match the base color?</p>
+    <div id="basecolor" style="width: 50px; height: 50px; background-color: blue;"></div>
+    <div id="box1" style="width: 50px; height: 50px; background-color: red;"></div>
+    <div id="box2" style="width: 50px; height: 50px; background-color: green;"></div>
+    <div id="box3" style="width: 50px; height: 50px; background-color: yellow;"></div>
+    <div id="box4" style="width: 50px; height: 50px; background-color: purple;"></div>
+    <div id="box5" style="width: 50px; height: 50px; background-color: pink;"></div>
+    <div id="box6" style="width: 50px; height: 50px; background-color: orange;"></div>
+    <div id="box7" style="width: 50px; height: 50px; background-color: gray;"></div>
+    <div id="box8" style="width: 50px; height: 50px; background-color: brown;"></div>
+    <div id="box9" style="width: 50px; height: 50px; background-color: black;"></div>
+    <button onclick="checkColors()">Check</button>
+    <p>Result: <span id="result"></span></p>
+    <script>
+      function checkColors() {
+        const baseColor = document.getElementById('basecolor').style.backgroundColor;
+        const box1Color = document.getElementById('box1').style.backgroundColor;
+        const box2Color = document.getElementById('box2').style.backgroundColor;
+        const box3Color = document.getElementById('box3').style.backgroundColor;
+        const box4Color = document.getElementById('box4').style.backgroundColor;
+        const box5Color = document.getElementById('box5').style.backgroundColor;
+        const box6Color = document.getElementById('box6').style.backgroundColor;
+        const box7Color = document.getElementById('box7').style.backgroundColor;
+        const box8Color = document.getElementById('box8').style.backgroundColor;
+        const box9Color = document.getElementById('box9').style.backgroundColor;
+        if (baseColor === box1Color && baseColor === box2Color && baseColor === box3Color && baseColor === box4Color && baseColor === box5Color && baseColor === box6Color && baseColor === box7Color && baseColor === box8Color && baseColor === box9Color) {
+          document.getElementById('result').textContent = 'raak';
+        } else {
+          document.getElementById('result').textContent = 'mis';
+        }
+      }
+      
+      function getRandomColor() {
+        const letters = '0123456789ABCDEF';
+        let color = '#';
+        for (let i = 0; i < 6; i++) {
+          color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+      }
+      
+      // Set random colors for boxes
+      document.getElementById('basecolor').style.backgroundColor = getRandomColor();
+      document.getElementById('box1').style.backgroundColor = getRandom

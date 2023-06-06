@@ -1,3 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object-oriented_2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+</head>
+
 <?php
 include("Auto.php");
 include("AutoOverzicht.php");
@@ -53,35 +65,111 @@ $ao->add(new Auto("Subaru", "Outback", "blauw", 32000));
 $ao->add(new Auto("Mazda", "CX-9", "wit", 37000));
 $ao->add(new Auto("Hyundai", "Santa Fe", "bruin", 32000));
 $ao->add(new Auto("Kia", "Sorento", "zilver", 35000));
+$ao->add(new Auto("Audi", "Q7", "zwart", 60000));
+$ao->add(new Auto("BMW", "X1", "blauw", 38000));
+$ao->add(new Auto("Mercedes", "S-Class", "zilver", 90000));
+$ao->add(new Auto("Volkswagen", "Jetta", "rood", 27000));
+$ao->add(new Auto("Ford", "Escape", "wit", 32000));
+$ao->add(new Auto("Toyota", "RAV4", "grijs", 35000));
+$ao->add(new Auto("Volvo", "XC90", "bruin", 45000));
+$ao->add(new Auto("Honda", "CR-V", "rood", 31000));
+$ao->add(new Auto("Chevrolet", "Traverse", "zwart", 38000));
+$ao->add(new Auto("Nissan", "Murano", "zilver", 34000));
+$ao->add(new Auto("Subaru", "Legacy", "blauw", 27000));
+$ao->add(new Auto("Mazda", "MX-5 Miata", "wit", 32000));
+$ao->add(new Auto("Hyundai", "Kona", "oranje", 25000));
+$ao->add(new Auto("Kia", "Rio", "grijs", 21000));
+$ao->add(new Auto("Jeep", "Compass", "groen", 32000));
+$ao->add(new Auto("Lexus", "IS 300", "goud", 41000));
+$ao->add(new Auto("Audi", "A6", "wit", 52000));
+$ao->add(new Auto("BMW", "X7", "bruin", 75000));
+$ao->add(new Auto("Mercedes", "GLE", "zilver", 58000));
+$ao->add(new Auto("Volkswagen", "Arteon", "grijs", 42000));
+$ao->add(new Auto("Ford", "Ranger", "zwart", 38000));
+$ao->add(new Auto("Toyota", "Tacoma", "rood", 35000));
+$ao->add(new Auto("Volvo", "V90", "bruin", 46000));
+$ao->add(new Auto("Honda", "Fit", "wit", 21000));
+$ao->add(new Auto("Chevrolet", "Blazer", "zilver", 37000));
+$ao->add(new Auto("Nissan", "Maxima", "zwart", 33000));
+$ao->add(new Auto("Subaru", "Crosstrek", "grijs", 28000));
+$ao->add(new Auto("Mazda", "CX-30", "blauw", 26000));
+$ao->add(new Auto("Hyundai", "Sonata", "wit", 29000));
+$ao->add(new Auto("Kia", "Forte", "zilver", 24000));
+$ao->add(new Auto("Jeep", "Renegade", "groen", 27000));
+$ao->add(new Auto("Lexus", "UX 250h", "goud", 42000));
+$ao->add(new Auto("Audi", "Q3", "wit", 38000));
+$ao->add(new Auto("BMW", "4 Serie", "blauw", 45000));
+$ao->add(new Auto("Mercedes", "A-Klasse", "zilver", 36000));
+$ao->add(new Auto("Volkswagen", "Atlas", "grijs", 40000));
+$ao->add(new Auto("Ford", "Bronco", "zwart", 48000));
+$ao->add(new Auto("Toyota", "Sienna", "rood", 32000));
+$ao->add(new Auto("Volvo", "S90", "bruin", 44000));
+$ao->add(new Auto("Honda", "Odyssey", "wit", 37000));
+$ao->add(new Auto("Chevrolet", "Corvette", "geel", 80000));
+$ao->add(new Auto("Nissan", "370Z", "grijs", 35000));
+$ao->add(new Auto("Subaru", "BRZ", "blauw", 31000));
+$ao->add(new Auto("Mazda", "Mazda6", "rood", 30000));
+$ao->add(new Auto("Hyundai", "Veloster", "zwart", 25000));
+$ao->add(new Auto("Kia", "Stinger", "wit", 39000));
+$ao->add(new Auto("Jeep", "Comanche", "groen", 33000));
+$ao->add(new Auto("Lexus", "LC 500", "zilver", 95000));
+$ao->add(new Auto("Audi", "R8", "blauw", 150000));
+$ao->add(new Auto("BMW", "M5", "zwart", 110000));
+$ao->add(new Auto("Mercedes", "G-Klasse", "grijs", 150000));
+$ao->add(new Auto("Volkswagen", "Golf GTI", "rood", 33000));
+$ao->add(new Auto("Ford", "GT", "wit", 500000));
+$ao->add(new Auto("Toyota", "Supra", "blauw", 55000));
+$ao->add(new Auto("Volvo", "XC40", "zilver", 35000));
+$ao->add(new Auto("Honda", "S2000", "geel", 40000));
+$ao->add(new Auto("Chevrolet", "Impala", "zwart", 38000));
+$ao->add(new Auto("Nissan", "Versa", "grijs", 22000));
+$ao->add(new Auto("Subaru", "Ascent", "blauw", 36000));
+$ao->add(new Auto("Mazda", "Miata MX-5", "rood", 28000));
+$ao->add(new Auto("Hyundai", "Accent", "wit", 21000));
+$ao->add(new Auto("Kia", "Cadenza", "zilver", 34000));
+$ao->add(new Auto("Jeep", "Cherokee", "groen", 37000));
+$ao->add(new Auto("Lexus", "ES 350", "goud", 43000));
+$ao->add(new Auto("Audi", "TT", "blauw", 46000));
+$ao->add(new Auto("BMW", "X6", "bruin", 65000));
+$ao->add(new Auto("Mercedes", "CLA-Klasse", "grijs", 42000));
+$ao->add(new Auto("Volkswagen", "Passat GT", "zwart", 32000));
+$ao->add(new Auto("Ford", "F-150", "rood", 45000));
+$ao->add(new Auto("Toyota", "Tundra", "wit", 42000));
 
 if (isset($_POST['submit'])) {
-    $autos = $ao->filterByMerk($_POST['merk']);
+    $merkFilter = $_POST['merk'];
+    $kleurFilter = $_POST['kleur'];
+    
+    if ($merkFilter == 'alle' && $kleurFilter == 'alle') {
+        $autos = $ao->autos;
+    } elseif ($merkFilter != 'alle' && $kleurFilter == 'alle') {
+        $autos = $ao->filterByMerk($merkFilter);
+    } elseif ($merkFilter == 'alle' && $kleurFilter != 'alle') {
+        $autos = $ao->filterByKleur($kleurFilter);
+    } else {
+        $autos = $ao->filterByMerkEnKleur($merkFilter, $kleurFilter);
+    }
 } else {
     $autos = $ao->autos;
 }
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Object-oriënted_2</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link href="style.css" rel="stylesheet">
-
-</head>
-
 <body>
     <h1 style="text-align: center; padding: 40px"><b>MRWheely</b></h1>
     <form action="index.php" method="post">
         <input type="submit" class="btn btn-primary" name="submit">
+        <h5>Merk</h5>
         <select name="merk" class="form-select">
             <option value="alle">Alle</option>
             <?php foreach ($ao->getMerken() as $merk) { ?>
                 <option><?= $merk ?></option>
+            <?php } ?>
+        </select>
+        <h5>Kleur</h5>
+        <select name="kleur" class="form-select">
+            <option value="alle">Alle</option>
+            <?php foreach ($ao->getKleuren() as $kleur) { ?>
+                <option><?= $kleur ?></option>
             <?php } ?>
         </select>
     </form>

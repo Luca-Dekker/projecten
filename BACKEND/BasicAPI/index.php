@@ -4,7 +4,6 @@
 		die("Connection failed: " . $conn->connect_error);
 	}
 	
-	// selecting SQL-query based on parameter in url
 	if(!empty($_GET['find']) && is_numeric($_GET['find'])) {
 		$sql = 'SELECT * FROM `user_details` WHERE `user_id` ="'.$_GET['find'].'"';
 	}

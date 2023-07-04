@@ -19,3 +19,10 @@ h1 {
     margin: 20px;
 }
 
+.arrow {
+    height: 40px;
+    display: block;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
